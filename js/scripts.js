@@ -32,7 +32,7 @@ function start() {
       add_comment(comment)
     }
 
-    //$('#fb-comments').masonry({percentPosition: true });
+    $('#fb-comments').masonry({percentPosition: true });
   }
 
   function add_post(post_text, special_link) {
