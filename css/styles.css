@@ -2,9 +2,6 @@
   background: center / cover no-repeat url("../img/kim.png");
   width: 170px;
   height: 200px;
-  -webkit-print-color-adjust: exact !important;
-  color-adjust: exact !important;
-  print-color-adjust: exact !important;
 }
 
 a.fb-commenter:link,
@@ -29,8 +26,16 @@ a.fb-commenter:active {
     margin: 16px 0 0;
   }
 
-  .bd-mode-toggle {
+  .bd-mode-toggle,
+  #obituary-link {
     display: none;
+  }
+
+  .kim-picture {
+    width: 128px;
+    height: 150px;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   a.fb-commenter {
