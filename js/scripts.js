@@ -27,11 +27,11 @@ function start() {
     const { comments_full, links: [{ text: special_link }], post_text } = json
 
     //add_post(post_text, special_link)
-    
+
     for (let comment of comments_full) {
       add_comment(comment)
     }
-    
+
     //$('#fb-comments').masonry({percentPosition: true });
   }
 
@@ -52,13 +52,13 @@ function start() {
   </div>
 </div>
 `
-    
+
     const new_comment = $(comment_html)
     $("blockquote", new_comment).html(fix_html_str_tag(comment.comment_text, false))
     $("figcaption", new_comment).html(commenter(comment))
     $("#fb-comments").append(new_comment)
   }
-  
+
   fetch(`./fb/${fb_post_id}.json`)
     .then(response => response.json())
     .then(json => show_data(json))

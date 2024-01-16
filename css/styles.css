@@ -4,19 +4,23 @@
   height: 200px;
   -webkit-print-color-adjust: exact !important;
   color-adjust: exact !important;
-    print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
 }
 
-a.fb-commenter:link, a.fb-commenter:visited {
+a.fb-commenter:link,
+a.fb-commenter:visited {
   text-decoration: none;
 }
 
-a.fb-commenter:hover, a.fb-commenter:active {
+a.fb-commenter:hover,
+a.fb-commenter:active {
   text-decoration: underline;
 }
 
 @media print {
-  body, .blockquote {
+
+  body,
+  .blockquote {
     font-size: 0.7rem;
   }
 
@@ -24,11 +28,11 @@ a.fb-commenter:hover, a.fb-commenter:active {
     break-inside: avoid;
     margin: 16px 0 0;
   }
-  
+
   .bd-mode-toggle {
     display: none;
   }
-  
+
   a.fb-commenter {
     color: inherit;
   }
