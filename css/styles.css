@@ -41,4 +41,12 @@ a.fb-commenter:active {
   a.fb-commenter {
     color: inherit;
   }
+
+  #fb-comments,
+  #fb-comments>* {
+    position: inherit !important;
+    height: inherit !important;
+    left: inherit !important;
+    top: inherit !important;
+  }
 }
