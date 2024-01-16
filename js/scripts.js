@@ -23,7 +23,6 @@ function commenter({ commenter_name, commenter_url }) {
 
 function start() {
   function show_data(json) {
-    console.dir(json)
     const { comments_full, links: [{ text: special_link }], post_text } = json
 
     //add_post(post_text, special_link)
@@ -32,7 +31,9 @@ function start() {
       add_comment(comment)
     }
 
-    $('#fb-comments').masonry({percentPosition: true });
+    setTimeout(() => {
+      $('#fb-comments').masonry({ percentPosition: true })
+    }, 0);
   }
 
   function add_post(post_text, special_link) {
@@ -64,4 +65,4 @@ function start() {
     .then(json => show_data(json))
 }
 
-$(start());
+$(start())
